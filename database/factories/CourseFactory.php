@@ -22,8 +22,10 @@ class CourseFactory extends Factory
     public function definition()
     {
         return [
+            'category' =>  $this->faker->text(15),
             'name' =>  $this->faker->text(40),
             'description' =>  $this->faker->paragraph(5),
+            'image' => 'https://picsum.photos/300/200'
         ];
     }
 }

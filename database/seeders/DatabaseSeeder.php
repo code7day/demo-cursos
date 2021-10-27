@@ -13,7 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Course::factory(1000)->create();
-        \App\Models\User::factory(1)->create(['email'=>'edu@demo.com']);
+        // \App\Models\Course::factory(1)->create(['category'=>'Adulto','name'=>'La Fé de Jesús']);
+        // \App\Models\User::factory(1)->create(['email'=>'edu@demo.com']);
+        $this->call(UserSeeder::class);
+        $this->call(CourseSeeder::class);
+        $this->call(LessonSeeder::class);
     }
 }

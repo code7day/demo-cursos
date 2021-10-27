@@ -22,7 +22,11 @@ class LessonFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'course_id' =>  1,
+            'name' =>  $this->faker->text(40),
+            'summary' =>  $this->faker->paragraph(1),
+            'number' => $this->faker->unique()->randomDigit+1,
+            'content' => $this->faker->paragraph(5),
         ];
     }
 }
