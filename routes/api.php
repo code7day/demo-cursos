@@ -22,6 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/login', [LoginController::class,'login'])->name('api-login');
 
-Route::middleware('auth:api')->group(function(){
-    Route::get('/user', [LoginController::class,'user'])->name('api-user');
+
+Route::middleware('auth:api')->prefix('user')->group(function () {
+    Route::get('info', [LoginController::class,'user'])->name('api-user');
 });
+
