@@ -1513,6 +1513,14 @@ select {
 	--tw-bg-opacity: 1;
 	background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
 }
+.bg-gray-300 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+.bg-black {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
 .bg-opacity-25 {
 	--tw-bg-opacity: 0.25;
 }
@@ -1590,6 +1598,10 @@ select {
 .py-10 {
 	padding-top: 2.5rem;
 	padding-bottom: 2.5rem;
+}
+.px-10 {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 }
 .pt-6 {
 	padding-top: 1.5rem;

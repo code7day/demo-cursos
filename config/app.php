@@ -167,6 +167,8 @@ return [
          */
         Laraveles\Spanish\SpanishServiceProvider::class,
         Translator\Framework\TranslatorServiceProvider::class,
+        Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
         /*
          * Application Service Providers...
          */

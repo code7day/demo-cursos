@@ -14,6 +14,7 @@ class CourseSeeder extends Seeder
      */
     public function run()
     {
-        Course::factory(1)->create(['category'=>'Adulto','name'=>'La Fé de Jesús']);
+        // Course::factory(1)->create(['category'=>'Adulto','name'=>'La Fé de Jesús']);
+        Course::factory(20)->create();
     }
 }
